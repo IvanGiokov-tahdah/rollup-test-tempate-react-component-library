@@ -1,9 +1,12 @@
 {
   "name": "@ivangiokov-tahdah/rollup-test-template-react-component-library",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A react component library",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "Ivan Giokov",
   "license": "ISC",
@@ -13,7 +16,18 @@
     "@babel/preset-react": "^7.16.5",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.1",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/builder-webpack5": "^6.4.9",
+    "@storybook/manager-webpack5": "^6.4.9",
+    "@storybook/react": "^6.4.9",
+    "@testing-library/react": "^12.1.2",
     "@types/react": "^17.0.37",
+    "babel-jest": "^27.4.6",
+    "babel-loader": "^8.2.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.4.6",
     "react": "^17.0.2",
     "rollup": "^2.61.1"
   },
@@ -23,9 +37,13 @@
     "dist"
   ],
   "dependencies": {
-    "@rollup/plugin-babel": "^5.3.0"
+    "@rollup/plugin-babel": "^5.3.0",
+    "from": "^0.1.7",
+    "import": "^0.0.6",
+    "postcss": "^8.4.5",
+    "rollup-plugin-postcss": "^4.0.2"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/IvanGiokov-tahdah"
+    "registry": "https://npm.pkg.github.com/ivangiokov-tahdah"
   }
 }
